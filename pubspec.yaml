@@ -1,0 +1,39 @@
+name: flutter_application_1
+description: EcoStudy Sync - gamified student focus and academic tracking app
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Local storage - Study Planner, Solo Study, Study Analytics
+  sqflite: ^2.4.2
+  path: ^1.9.0
+  path_provider: ^2.1.4
+
+  # Firebase - Lecture Sync (realtime sync + anonymous auth)
+  firebase_core: ^4.14.0
+  firebase_auth: ^6.6.0
+  firebase_database: ^12.5.0
+
+  # Screen on/off detection - separates screen-lock from app-switch
+  screen_state_v2: ^6.0.0
+
+  # Charts - Study Analytics dashboard
+  fl_chart: ^0.69.0
+
+  # Local unique IDs for SQLite records
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
